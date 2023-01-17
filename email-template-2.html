@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="http://drive.google.com/uc?export=view&id=1zvEo169K-nX704-jNh7cXfGx7VdyB2Ua" type="image/x-icon">
+    <title>Email Template 1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+                text-align: center;
+                margin: 0 auto;
+                width: 650px;
+                font-family: 'Rubik', sans-serif;
+                background-color: #e2e2e2;
+                display: block;
+            }
+            table{
+                width: 100%;
+                border-spacing: 0px;
+            }
+            .main{
+                background-color: white;
+                box-shadow: 0px 0px 14px -4px rgb(0 0 0 / 27%);
+                width: 100%;
+                -webkit-box-shadow: 0px 0px 14px -4px rgb(0 0 0 / 27%);
+                /* padding: 0 15px; */
+            }
+            .footer{
+                background-color: #3d3d3d;
+                padding: 40px;
+            }
+            ::marker{
+            color: white;
+        }
+        a{
+            text-decoration: none;
+        }
+        ul li a{
+            color: #777777;
+            font-size: 16px;
+        }
+        ul li a:hover{
+            color: #81cf4e;
+            letter-spacing: 1px;
+            transition: all 0.5s;
+        }
+        .tittle{
+            position: relative;
+            padding-bottom: 10px;
+        }
+        h2::before{
+            content: '';
+            position: absolute;
+            bottom: 1.5px;
+            left: 50%;
+            width: 20%;
+            transform: translateX(-50%);
+            height: 1px;
+            background-color: #ddd;
+        }
+        h2::after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+            width: 12%;
+            height: 4px;
+            background-color: #81cf4e;
+            border-radius: 50px;
+        }
+        h5{
+            font-size: 14px;
+            font-weight: bold;
+            color: #212529;
+            padding-top: 15px;
+        }
+        p{
+            font-size: 13px;
+            color: #777;
+            margin: 9px 0px;
+        }
+        span{
+            font-weight: 500;
+            color: #81cf4e;
+            font-size: 22px;
+        }
+        .banner-2{
+            position: relative;
+        }
+        .banner-text{
+            position: absolute;
+            top: 50%;
+            text-align: left;
+            transform: translateY(-50%);
+            left: calc(20px + (60 - 20) * ((100vw - 320px) / (1920 - 320)));
+            transform: translateY(-50%);
+            width: 40%;
+        }
+        .product-info{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #81cf4e;
+            display: flex;
+            justify-content: center;
+            animation-delay: 2s;
+        }
+        .product-info:hover a{
+            color: white;
+        }
+        .product-info:hover{
+            background-color: #82cf4eae;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: animate 5s ease-in;
+            animation-delay: 2s;
+        }
+        @keyframes animate{
+            from {
+                bottom: 0px;
+            }
+
+            to {
+                top: 100%;
+            }
+        }
+        .product-info a{
+            color: white;
+        }
+        .product-img{
+            position: relative;
+        }
+    </style>
+</head>
+<body style="margin: 20px auto;">
+    <table class="main">
+        <tr>
+            <td>
+                <!-- logo  -->
+                <table style="padding: 0px 20px;">
+                    <tr>
+                        <td style="padding: 10px 0px; text-align: start;">
+                            <a href="#">
+                                <img style="width: 200px;" src="http://drive.google.com/uc?export=view&id=1_gaAlDuK-34IgIqlRLn8x8mL0v_ZJs91" alt="">
+                            </a>
+                        </td>
+                        <td style="text-align: end;">
+                            <ul style="display: flex; align-items: center; justify-content: space-between;">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Wishlist</a></li>
+                                <li><a href="#">My Cart</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+                <!-- banner  -->
+                <table>
+                    <tr>
+                        <td>
+                            <img src="http://drive.google.com/uc?export=view&id=1fy0R1HE0HsrlaIzMDx6LVAJSYP1GlT0l" alt="banner 1 " width="100%">
+                        </td>
+                    </tr>
+                </table>
+                <!-- cart section  -->
+                <table style="padding: 40px;">
+                    <tr>
+                        <td class="tittle">
+                            <h2 style="font-weight: bold; text-transform: capitalize; color: #212529;">Our Category</h2>
+                        </td>
+                    </tr>
+                </table>
+                <!-- card  -->
+                <table style="padding: 0px 15px;">
+                    <tr style="display: flex; gap: 30px;">
+                        <td>
+                            <img src="http://drive.google.com/uc?export=view&id=1Qqyru0aRZX7pLY_MqlAHIczgqy0DaooS" alt="card img 1" width="100%">
+                            <h5 style="background-color: #81cf4e; color: white; padding: 10px; margin-top: -4px;">New Tranding Fashion </h5>        
+                        </td>
+
+                        <td>
+                            <img src="http://drive.google.com/uc?export=view&id=11xFe_JujqPXlWToYRCvuHnU2eN_I7nSa" alt="card img 2" width="100%">
+                            <h5 style="background-color: #81cf4e; color: white; padding: 10px; margin-top: -4px;">New Tranding Fashion </h5>
+                        </td>
+
+                    </tr>
+                </table>
+                <!-- latest product  -->
+                <table style="padding: 40px;">
+                    <tr>
+                        <td class="tittle">
+                            <h2 style="font-weight: bold; text-transform: capitalize; color: #212529;">New Latest Product</h2>
+                        </td>
+                    </tr>
+                </table>
+                <!-- banner 2 -->
+                <table style="padding: 30px;">
+                    <tr style="display: flex; align-items: center; gap: 30px;">
+                       <td>
+                        <img src="img/7.jpg" alt="" width="100%">
+                       </td> 
+                       <td style="text-align: start;">
+                        <h3>That Bag Shape We All Had in the Early 2000s.</h3>
+                        <p>Baggit Bags For Women</p>
+                        <span style="display: block; margin-bottom: 20px;">$58.89 <del style="font-size: 14px; color: #777;">$90.57</del></span>
+                        <a href="#" style="background-color: #81cf4e; padding: 8px 25px; color: white; border-radius: 6px;">Buy Now</a>
+                       </td>
+                    </tr>
+                </table>
+                <!-- latest product  content -->
+                <table style="padding: 20px;">
+                    <tr>
+                        <td class="tittle">
+                            <h2 style="font-weight: bold; text-transform: capitalize; color: #212529;">Top Selling</h2>
+                        </td>
+                    </tr>
+                </table>
+                <!-- offer card  -->
+                <table style="padding: 30px 15px;">
+                    <tr style="display: flex; gap: 20px; justify-content: space-between; align-items: center;">
+
+                        <td>
+                            <div class="product-box">
+                                <div class="product-img">
+                                    <img src="http://drive.google.com/uc?export=view&id=1UAY0aHSyZjDsKtxUVdkuCGrTbhJM80Cd" alt="product" style="width: 100%;">
+                                    <div class="product-info">
+                                        <a href="#" style="font-size: 13px; padding: 10px;letter-spacing: 1.3px;">New Fashion</a>
+                                    </div>
+                                </div>
+                                <div class="product-contain">
+                                    <h5 style="color: #777; text-align: start; padding-bottom: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, quisquam.</h5>
+                                    <span style="font-size: 16px;">$49.99 <del style="font-size: 13px; color: #777; padding-left: 6px;">$66.98</del></span>
+                                </div>
+                            </div>
+                        </td>
+
+                        <td>
+                            <div class="product-box">
+                                <div class="product-img">
+                                    <img src="http://drive.google.com/uc?export=view&id=12J8DOvpgtFaeP2e4YdJ3D5MWFuRcAyM8" alt="product" style="width: 100%;">
+                                    <div class="product-info">
+                                        <a href="#" style="font-size: 13px; padding: 10px;letter-spacing: 1.3px;">New Fashion</a>
+                                    </div>
+                                </div>
+                                <div class="product-contain">
+                                    <h5 style="color: #777; text-align: start; padding-bottom: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, quisquam.</h5>
+                                    <span style="font-size: 16px;">$49.99 <del style="font-size: 13px; color: #777; padding-left: 6px;">$66.98</del></span>
+                                </div>
+                            </div>
+                        </td>
+
+                        <td>
+                            <div class="product-box">
+                                <div class="product-img">
+                                    <img src="http://drive.google.com/uc?export=view&id=1Khuaio7CYgvxRW4Emv6T0oBPULYpykH-" alt="product" style="width: 100%;">
+                                    <div class="product-info">
+                                        <a href="#" style="font-size: 13px; padding: 10px;letter-spacing: 1.3px;">New Fashion</a>
+                                    </div>
+                                </div>
+                                <div class="product-contain">
+                                    <h5 style="color: #777; text-align: start; padding-bottom: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, quisquam.</h5>
+                                    <span style="font-size: 16px;">$49.99 <del style="font-size: 13px; color: #777; padding-left: 6px;">$66.98</del></span>
+                                </div>
+                            </div>
+                        </td>
+
+                        <!-- <td style="position: relative; overflow: hidden;">
+                            <a href="#"><img src="http://drive.google.com/uc?export=view&id=1UAY0aHSyZjDsKtxUVdkuCGrTbhJM80Cd" alt="offer img 1" style="width: 100%;"></a>
+                            <a href="#" style="background-color: #81cf4e; color: white; font-size: 14px; padding: 10px 20px; position: absolute; bottom: 0; width: 100%;">New Fashion</a>
+                        </td>
+
+                        <td style="position: relative; overflow: hidden;">
+                            <a href="#"><img src="http://drive.google.com/uc?export=view&id=12J8DOvpgtFaeP2e4YdJ3D5MWFuRcAyM8" alt="offer img 2" style="width: 100%;"></a>
+                        </td>
+
+                        <td style="position: relative; overflow: hidden;">
+                            <a href="#"><img src="http://drive.google.com/uc?export=view&id=1Khuaio7CYgvxRW4Emv6T0oBPULYpykH-" alt="offer img 3" style="width: 100%;"></a>
+                        </td> -->
+
+                    </tr>
+                </table>
+                <!-- follow us  -->
+                <table style="padding-top: 20px;">
+                    <tr>
+                        <td class="tittle" style="text-align: center;">
+                            <h2 style="color: #212529; font-size: 24px; line-height: 32px; cursor: pointer;">Follow Us</h2>
+                        </td>
+                    </tr>
+                </table>
+
+                <table style="display: flex; justify-content: center; padding: 20px 0px;">
+
+                    <tr style="display: flex; align-items: center; justify-content: center;">
+
+                        <td style="padding: 0px 10px;">
+                            <a href="#">
+                                <img src="http://drive.google.com/uc?export=view&id=1L8OSk2WAzGs7y2aBcBLhQR8wfSvAduZQ" alt="" style="font-size: 25px; width: 22px;">
+                            </a>
+                        </td>
+
+                        <td style="padding: 0px 10px;">
+                            <a href="#">
+                                <img src="http://drive.google.com/uc?export=view&id=1sThhYiE9eACVbgIf7a8-vcG6y1IHpIcl" alt="" style="font-size: 25px; width: 22px; ">
+                            </a>
+                        </td>
+
+                        <td style="padding: 0px 10px;">
+                            <a href="#">
+                                <img src="http://drive.google.com/uc?export=view&id=1IWdipn8DPPuhujLXgJWra1hBlw3uq4vL" alt="" style="font-size: 25px; width: 22px; ">
+                            </a>
+                        </td>
+
+                        <td style="padding: 0px 10px;">
+                            <a href="#">
+                                <img src="http://drive.google.com/uc?export=view&id=1kpSdH9BHewjZbK4bfnXZDpdfHZ_2Qd2f" alt="" style="font-size: 25px; width: 22px;">
+                            </a>
+                        </td>
+
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+    </table>
+
+   <!-- footer  -->
+     <table class="footer" >
+
+        <tbody>
+
+            <tr>
+
+                <td>
+
+                    <table style="width: 100%;">
+
+                        <tr style="display: flex; flex-direction: column; justify-content: center;">
+
+                            <td>
+                                <h5 style="color: white; font-size: 14px; text-transform: uppercase; text-align: center;">This email was created using tha info technology.</h5>
+                            </td>
+
+                            <td>
+                                <h5 style="color: white; padding-top: 10px; font-size: 14px; text-transform: uppercase; text-align: center;">Made with by design <b style="color: #81cf4e;">info tech team.</b></h5>
+                            </td>
+
+                        </tr>
+
+                    </table>
+
+                    <table>
+                        <tr style="display: flex; justify-content: center; margin-top: 15px;">
+                            <td>
+                                <ul style="display: flex;">
+                                    <li style="list-style:none; margin: 0px 10px;"><a href="#" style="color: white; font-size: 14px;">CONTACT US</a></li>
+                                    <li style="margin: 0px 10px;"><a href="#" style="color: white; font-size: 14px;">PRIVACY POLICY</a></li>
+                                    <li style="margin: 0px 10px;"><a href="#" style="color: white; font-size: 14px;">UNSUBSCRIBE</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+
+                </td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+</body>
+</html>
